@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_reservation"
+        android:name="com.thesis.partas.passenger.ui.reservation.ReservationFragment"
+        android:label="My Reservation"
+        tools:layout="@layout/fragment_reservation" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.thesis.partas.passenger.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.thesis.partas.passenger.ui.user.UserFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.thesis.partas.passenger.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.thesis.partas.passenger.ui.schedule.ScheduleFragment"
+        android:label="@string/menu_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/nav_route"
+        android:name="com.thesis.partas.passenger.ui.route.RouteFragment"
+        android:label="@string/menu_route"
+        tools:layout="@layout/fragment_route" />
+</navigation>
